@@ -6,6 +6,8 @@ import UsingArray from './components/UsingArray'
 import UseEffectHook from './components/useEffectHook/UseEffectHook'
 import FetchApi from './components/useEffectHook/FetchApi'
 import Debounce from './components/useEffectHook/Debounce'
+import UseRefHook from './components/useRefHook/UseRefHook'
+import UseMemoHook from './components/UseMemoHook/UseMemoHook'
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/effect" element={<UseEffectHook />} />
         <Route path="/api" element={<FetchApi />} />
         <Route path="/debounce" element={<Debounce />} />
+        <Route path="/ref" element={<UseRefHook />} />
+        <Route path="/memo" element={<UseMemoHook />} />
       </Routes>
     </BrowserRouter>
     </>
