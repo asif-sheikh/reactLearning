@@ -8,6 +8,8 @@ import FetchApi from './components/useEffectHook/FetchApi'
 import Debounce from './components/useEffectHook/Debounce'
 import UseRefHook from './components/useRefHook/UseRefHook'
 import UseMemoHook from './components/UseMemoHook/UseMemoHook'
+import UseCallback from './components/UseCallback/UseCallback'
+import UseContext from './components/useContext/UseContext'
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/debounce" element={<Debounce />} />
         <Route path="/ref" element={<UseRefHook />} />
         <Route path="/memo" element={<UseMemoHook />} />
+        <Route path="/callback" element={<UseCallback />} />
+        <Route path="/context" element={<UseContext children={undefined} />} />
       </Routes>
     </BrowserRouter>
     </>
