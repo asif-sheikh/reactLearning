@@ -9,7 +9,10 @@ import Debounce from './components/useEffectHook/Debounce'
 import UseRefHook from './components/useRefHook/UseRefHook'
 import UseMemoHook from './components/UseMemoHook/UseMemoHook'
 import UseCallback from './components/UseCallback/UseCallback'
-import UseContext from './components/useContext/UseContext'
+import UserContext from './components/useContext/UserContext'
+import UsereducerHook from './components/UseReducer/UsereducerHook'
+import UseReducerComplex from './components/UseReducer/UseReducerComplex'
+import CustomHook from './components/CustomHooks/CustomHook'
 
 function App() {
   return (
@@ -25,7 +28,11 @@ function App() {
         <Route path="/ref" element={<UseRefHook />} />
         <Route path="/memo" element={<UseMemoHook />} />
         <Route path="/callback" element={<UseCallback />} />
-        <Route path="/context" element={<UseContext children={undefined} />} />
+        <Route path="/context" element={<UserContext />} />
+        <Route path="/reduce" element={<UsereducerHook />} />
+        <Route path="/complex" element={<UseReducerComplex />} />
+        <Route path="/custom" element={<CustomHook />} />
+
       </Routes>
     </BrowserRouter>
     </>
