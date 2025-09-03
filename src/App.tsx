@@ -13,6 +13,11 @@ import UserContext from './components/useContext/UserContext'
 import UsereducerHook from './components/UseReducer/UsereducerHook'
 import UseReducerComplex from './components/UseReducer/UseReducerComplex'
 import CustomHook from './components/CustomHooks/CustomHook'
+import AxiosGet from './components/Axios/AxiosGet'
+import PostExample from './components/Axios/AxiosPost'
+import AxiosPut from './components/Axios/AxiosPut'
+import AxiosDelete from './components/Axios/AxiosDelete'
+import TanStackQuery from './components/TanStack/TanStackQuery'
 
 function App() {
   return (
@@ -32,7 +37,11 @@ function App() {
         <Route path="/reduce" element={<UsereducerHook />} />
         <Route path="/complex" element={<UseReducerComplex />} />
         <Route path="/custom" element={<CustomHook />} />
-
+        <Route path="/get" element={<AxiosGet />} />
+        <Route path="/post" element={<PostExample />} />
+        <Route path="/delete" element={<AxiosDelete />} />
+        <Route path="/put" element={<AxiosPut />} />
+        <Route path="/tanstack" element={<TanStackQuery />} />
       </Routes>
     </BrowserRouter>
     </>
